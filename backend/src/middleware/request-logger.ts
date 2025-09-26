@@ -5,6 +5,6 @@ export const requestLogger = (
     res: Response,
     next: NextFunction
 ) => {
-    console.log(`${req.method} ${req.url}`);
+    console.log(`${req.method} ${res.statusCode} ${req.url}`);
     next();
 };

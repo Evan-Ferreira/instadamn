@@ -1,11 +1,9 @@
-export type Action = 'like' | 'unlike';
-
 export type Post = {
-    id: number;
-    caption: string;
-    likes: number;
     firstName: string;
     lastName: string;
     username: string;
+    likes: number;
     photo: string;
+    id: number;
+    caption?: string;
 };
