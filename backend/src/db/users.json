@@ -1,67 +1,324 @@
 {
-  "evan": [
-    {
-      "id": 9171135319,
-      "caption": "A random photo",
-      "likes": 112,
-      "firstName": "Evan",
-      "lastName": "Smith",
-      "username": "evan",
-      "photo": "cat_ears.jpg"
-    },
-    {
-      "id": 91711353234,
-      "caption": "ooohhh",
-      "likes": 214,
-      "firstName": "Evan",
-      "lastName": "Smith",
-      "username": "evan",
-      "photo": "cat_sleep.jpg"
-    },
-    {
-      "id": 91711353235,
-      "caption": "woof woof",
-      "likes": 34,
-      "firstName": "Evan",
-      "lastName": "Smith",
-      "username": "evan",
-      "photo": "mouse_princess.png"
-    },
-    {
-      "id": 91711353236,
-      "caption": "meow meow",
-      "likes": 100,
-      "firstName": "Evan",
-      "lastName": "Smith",
-      "username": "evan",
-      "photo": "cat_sleep.jpg"
-    },
-    {
-      "id": 91711353237,
-      "caption": "meow meow",
-      "likes": 100,
-      "firstName": "Evan",
-      "lastName": "Smith",
-      "username": "evan",
-      "photo": "cat_sleep.jpg"
-    },
-    {
-      "id": 91711353238,
-      "caption": "meow meow",
-      "likes": 100,
-      "firstName": "Evan",
-      "lastName": "Smith",
-      "username": "evan",
-      "photo": "cat_sleep.jpg"
-    },
-    {
-      "id": 91711353239,
-      "caption": "meow meow",
-      "likes": 100,
-      "firstName": "Evan",
-      "lastName": "Smith",
-      "username": "evan",
-      "photo": "cat_sleep.jpg"
-    }
-  ]
+  "evan": {
+    "firstName": "Evan",
+    "lastName": "Smith",
+    "profile_picture": "cat_sleep.jpg",
+    "bio": "I'm not a cat",
+    "posts": [
+      {
+        "id": 9171135319,
+        "caption": "A random photo",
+        "likes": 113,
+        "photo": "cat_ears.jpg"
+      },
+      {
+        "id": 91711353234,
+        "caption": "ooohhh",
+        "likes": 214,
+        "photo": "cat_sleep.jpg"
+      },
+      {
+        "id": 91711353235,
+        "caption": "woof woof",
+        "likes": 34,
+        "photo": "mouse_princess.png"
+      },
+      {
+        "id": 91711353236,
+        "caption": "meow meow",
+        "likes": 100,
+        "photo": "cat_sleep.jpg"
+      },
+      {
+        "id": 91711353237,
+        "caption": "meow meow",
+        "likes": 100,
+        "photo": "cat_sleep.jpg"
+      },
+      {
+        "id": 91711353238,
+        "caption": "meow meow",
+        "likes": 100,
+        "photo": "cat_sleep.jpg"
+      },
+      {
+        "id": 91711353239,
+        "caption": "meow meow",
+        "likes": 100,
+        "photo": "cat_sleep.jpg"
+      }
+    ]
+  },
+  "sarah": {
+    "firstName": "Sarah",
+    "lastName": "Johnson",
+    "profile_picture": "cat_ears.jpg",
+    "bio": "Photography enthusiast 📸 | Coffee lover ☕ | Adventure seeker",
+    "posts": [
+      {
+        "id": 91711354000,
+        "caption": "Golden hour magic ✨",
+        "likes": 342,
+        "photo": "cat_ears.jpg"
+      },
+      {
+        "id": 91711354001,
+        "caption": "Coffee and contemplation ☕",
+        "likes": 156,
+        "photo": "cat_sleep.jpg"
+      },
+      {
+        "id": 91711354002,
+        "caption": "Weekend vibes are the best vibes",
+        "likes": 89,
+        "photo": "mouse_princess.png"
+      },
+      {
+        "id": 91711354003,
+        "caption": "Throwback to that amazing sunset 🌅",
+        "likes": 267,
+        "photo": "cat_ears.jpg"
+      }
+    ]
+  },
+  "mike": {
+    "firstName": "Mike",
+    "lastName": "Chen",
+    "profile_picture": "mouse_princess.png",
+    "bio": "Software developer | Gamer | Foodie 🍕",
+    "posts": [
+      {
+        "id": 91711355000,
+        "caption": "Just shipped a new feature! 🚀",
+        "likes": 78,
+        "photo": "cat_sleep.jpg"
+      },
+      {
+        "id": 91711355001,
+        "caption": "Pizza night with the squad 🍕",
+        "likes": 134,
+        "photo": "cat_ears.jpg"
+      },
+      {
+        "id": 91711355002,
+        "caption": "Gaming setup is finally complete!",
+        "likes": 203,
+        "photo": "mouse_princess.png"
+      },
+      {
+        "id": 91711355003,
+        "caption": "Code review time 💻",
+        "likes": 45,
+        "photo": "cat_sleep.jpg"
+      },
+      {
+        "id": 91711355004,
+        "caption": "Found this gem at the local bookstore 📚",
+        "likes": 92,
+        "photo": "cat_ears.jpg"
+      }
+    ]
+  },
+  "emma": {
+    "firstName": "Emma",
+    "lastName": "Williams",
+    "profile_picture": "cat_sleep.jpg",
+    "bio": "Artist | Yoga instructor | Nature lover 🌿",
+    "posts": [
+      {
+        "id": 91711356000,
+        "caption": "Morning yoga flow 🧘‍♀️",
+        "likes": 189,
+        "photo": "mouse_princess.png"
+      },
+      {
+        "id": 91711356001,
+        "caption": "New painting in progress 🎨",
+        "likes": 156,
+        "photo": "cat_ears.jpg"
+      },
+      {
+        "id": 91711356002,
+        "caption": "Forest walk today 🌲",
+        "likes": 234,
+        "photo": "cat_sleep.jpg"
+      },
+      {
+        "id": 91711356003,
+        "caption": "Meditation spot found ✨",
+        "likes": 178,
+        "photo": "mouse_princess.png"
+      },
+      {
+        "id": 91711356004,
+        "caption": "Art supplies haul 🖌️",
+        "likes": 67,
+        "photo": "cat_ears.jpg"
+      },
+      {
+        "id": 91711356005,
+        "caption": "Sunset from my balcony 🌅",
+        "likes": 312,
+        "photo": "cat_sleep.jpg"
+      }
+    ]
+  },
+  "alex": {
+    "firstName": "Alex",
+    "lastName": "Rodriguez",
+    "profile_picture": "cat_ears.jpg",
+    "bio": "Musician | Travel blogger | Dog dad 🐕",
+    "posts": [
+      {
+        "id": 91711357000,
+        "caption": "New song coming soon! 🎵",
+        "likes": 445,
+        "photo": "mouse_princess.png"
+      },
+      {
+        "id": 91711357001,
+        "caption": "Buddy and I at the park 🐕",
+        "likes": 298,
+        "photo": "cat_sleep.jpg"
+      },
+      {
+        "id": 91711357002,
+        "caption": "Tokyo adventures continue 🇯🇵",
+        "likes": 523,
+        "photo": "cat_ears.jpg"
+      },
+      {
+        "id": 91711357003,
+        "caption": "Studio session vibes 🎤",
+        "likes": 167,
+        "photo": "mouse_princess.png"
+      },
+      {
+        "id": 91711357004,
+        "caption": "Street food discoveries 🍜",
+        "likes": 234,
+        "photo": "cat_sleep.jpg"
+      }
+    ]
+  },
+  "lisa": {
+    "firstName": "Lisa",
+    "lastName": "Thompson",
+    "profile_picture": "mouse_princess.png",
+    "bio": "Fitness coach | Mom of 2 | Motivational speaker 💪",
+    "posts": [
+      {
+        "id": 91711358000,
+        "caption": "Morning workout complete! 💪",
+        "likes": 189,
+        "photo": "cat_ears.jpg"
+      },
+      {
+        "id": 91711358001,
+        "caption": "Kids helping with meal prep 👶",
+        "likes": 156,
+        "photo": "cat_sleep.jpg"
+      },
+      {
+        "id": 91711358002,
+        "caption": "Motivation Monday! You got this! 🔥",
+        "likes": 267,
+        "photo": "mouse_princess.png"
+      },
+      {
+        "id": 91711358003,
+        "caption": "Family hike adventure 🥾",
+        "likes": 198,
+        "photo": "cat_ears.jpg"
+      },
+      {
+        "id": 91711358004,
+        "caption": "Healthy meal prep Sunday 🥗",
+        "likes": 123,
+        "photo": "cat_sleep.jpg"
+      }
+    ]
+  },
+  "david": {
+    "firstName": "David",
+    "lastName": "Kim",
+    "profile_picture": "cat_sleep.jpg",
+    "bio": "Chef | Food photographer | Recipe creator 👨‍🍳",
+    "posts": [
+      {
+        "id": 91711359000,
+        "caption": "Homemade ramen perfection 🍜",
+        "likes": 456,
+        "photo": "mouse_princess.png"
+      },
+      {
+        "id": 91711359001,
+        "caption": "Fresh ingredients from the market 🥬",
+        "likes": 234,
+        "photo": "cat_ears.jpg"
+      },
+      {
+        "id": 91711359002,
+        "caption": "Dessert experiment gone right! 🍰",
+        "likes": 345,
+        "photo": "cat_sleep.jpg"
+      },
+      {
+        "id": 91711359003,
+        "caption": "Kitchen prep time 👨‍🍳",
+        "likes": 123,
+        "photo": "mouse_princess.png"
+      },
+      {
+        "id": 91711359004,
+        "caption": "New recipe testing in progress 🧪",
+        "likes": 178,
+        "photo": "cat_ears.jpg"
+      },
+      {
+        "id": 91711359005,
+        "caption": "Food photography setup 📸",
+        "likes": 267,
+        "photo": "cat_sleep.jpg"
+      }
+    ]
+  },
+  "maya": {
+    "firstName": "Maya",
+    "lastName": "Patel",
+    "profile_picture": "cat_ears.jpg",
+    "bio": "Fashion designer | Sustainability advocate | Yoga enthusiast 🌱",
+    "posts": [
+      {
+        "id": 91711360000,
+        "caption": "Sustainable fashion collection preview 🌱",
+        "likes": 389,
+        "photo": "mouse_princess.png"
+      },
+      {
+        "id": 91711360001,
+        "caption": "Yoga flow in the park 🧘‍♀️",
+        "likes": 234,
+        "photo": "cat_sleep.jpg"
+      },
+      {
+        "id": 91711360002,
+        "caption": "Thrift store finds of the day ♻️",
+        "likes": 156,
+        "photo": "cat_ears.jpg"
+      },
+      {
+        "id": 91711360003,
+        "caption": "Design inspiration everywhere ✨",
+        "likes": 198,
+        "photo": "mouse_princess.png"
+      },
+      {
+        "id": 91711360004,
+        "caption": "Eco-friendly lifestyle tips 🌿",
+        "likes": 267,
+        "photo": "cat_sleep.jpg"
+      }
+    ]
+  }
 }

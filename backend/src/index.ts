@@ -30,10 +30,10 @@ app.get('/users', (req, res) => {
     res.send(readJsonFile('./src/db/users.json'));
 });
 
-app.get('/users/:username', (req, res) => {
+app.get('/users/:username/posts', (req, res) => {
     const { username } = req.params;
     const users = readJsonFile('./src/db/users.json');
-    const posts = users[username];
+    const posts = users[username]['posts'];
     res.send(posts);
 });
 
@@ -41,7 +41,7 @@ app.patch('/users/:username/posts/:id', (req, res) => {
     const { username, id } = req.params;
     const { action } = req.body;
     const users = readJsonFile('./src/db/users.json');
-    users[username].forEach((post: Post) => {
+    users[username]['posts'].forEach((post: Post) => {
         if (post.id === Number(id)) {
             if (action === 'like') {
                 post.likes++;
@@ -53,7 +53,9 @@ app.patch('/users/:username/posts/:id', (req, res) => {
     writeJsonFile('./src/db/users.json', users);
     res.send({
         success: true,
-        data: users[username].find((post: Post) => post.id === Number(id)),
+        data: users[username]['posts'].find(
+            (post: Post) => post.id === Number(id)
+        ),
     });
 });
 

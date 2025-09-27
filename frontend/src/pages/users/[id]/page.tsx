@@ -2,16 +2,17 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import type { Post as PostType } from '../../../utils/types';
 import { Post } from './post';
+import { useNavigate } from 'react-router-dom';
 
 const Page = () => {
     const { username } = useParams();
     const [userPosts, setUserPosts] = useState<PostType[] | null>(null);
     const [likedPosts, setLikedPosts] = useState<Set<number>>(new Set());
-
+    const navigate = useNavigate();
     const handleLike = async (post: PostType, action: 'like' | 'unlike') => {
         try {
             const response = await fetch(
-                `http://localhost:3000/users/${post.username}/posts/${post.id}`,
+                `http://localhost:3000/users/${username}/posts/${post.id}`,
                 {
                     method: 'PATCH',
                     headers: {
@@ -50,7 +51,7 @@ const Page = () => {
         const getUser = async (username: string) => {
             try {
                 const response = await fetch(
-                    `http://localhost:3000/users/${username}`
+                    `http://localhost:3000/users/${username}/posts`
                 ).then((response) => response.json());
                 setUserPosts(response);
             } catch (error) {
@@ -62,12 +63,9 @@ const Page = () => {
         }
     }, [username]);
 
-    if (!userPosts) {
-        return <div>Loading...</div>;
-    }
     return (
-        <div className="flex flex-col items-center justify-start gap-4">
-            {userPosts.map((post) => (
+        <div className="flex flex-col items-center justify-start gap-4 relative">
+            {userPosts?.map((post) => (
                 <Post
                     key={post.id}
                     post={post}
