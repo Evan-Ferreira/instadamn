@@ -1,4 +1,3 @@
-import React from 'react';
 import type { User } from '../utils/types';
 
 const UserListItem = ({
